@@ -9,17 +9,18 @@ To persist your camera configuration and motion capture schedule you need to
 
 To start a webserver:
 
-`
+```
 docker run \
   --device=/dev/vchiq \
   --device=/dev/vcsm \
-  --volume "./schedule.json:/var/www/schedule.json" \
-  --volume "./uconfig:/var/www/uconfig" \
-  --volume "./media:/var/www/media" \
+  --volume "$(pwd)/schedule.json:/var/www/schedule.json" \
+  --volume "$(pwd)/uconfig:/var/www/uconfig" \
+  --volume "$(pwd)/media:/var/www/media" \
   --publish 80:80 \
   --rm \
-  bakerba/rpi-cam`
- 
+  bakerba/rpi-cam
+```
+
 Example docker-compose.yml:
 
 ```
