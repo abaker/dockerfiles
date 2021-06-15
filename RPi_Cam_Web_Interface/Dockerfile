@@ -4,7 +4,7 @@ RUN \
   apk add curl && \
   curl -L https://github.com/balena-io/qemu/releases/download/v3.0.0%2Bresin/qemu-3.0.0+resin-arm.tar.gz | tar --strip=1 -zxvf - && \
   mkdir /RPi_Cam_Web_Interface && \
-  curl -L https://github.com/silvanmelchior/RPi_Cam_Web_Interface/archive/29973ca19c1ea4b5f1d932915184dbd467fce958.tar.gz | tar --strip=1 -C RPi_Cam_Web_Interface -zxvf -
+  curl -L https://github.com/silvanmelchior/RPi_Cam_Web_Interface/archive/02687775dbb710b141d3efe5d7cf661d16ce67de.tar.gz | tar --strip=1 -C RPi_Cam_Web_Interface -zxvf -
 
 FROM balenalib/rpi-debian:buster-build-20190806
 
